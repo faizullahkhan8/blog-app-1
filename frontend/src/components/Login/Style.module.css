@@ -1,0 +1,90 @@
+.loginContainer {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+.loginContainer_wrapper {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 50px;
+
+    border: 3px solid #9be7e7;
+    border-radius: 20px;
+}
+
+.loginContainer_wrapper h1 {
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.loginContainer_wrapper input {
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background: #9be7e750;
+    font-size: 18px;
+}
+
+.loginContainer_wrapper_error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    color: #ff0000;
+}
+
+.loginContainer_warpper_loginBtn {
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 20px;
+    font-size: 30px;
+    border: none;
+    background: rgba(100, 200, 100);
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+
+.loginContainer_warpper_loginBtn:hover {
+    background: rgba(100, 170, 100);
+    border: 1px solid teal;
+}
+
+.loginContainer_wrapper_notHaveAccount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+    font-size: 20px;
+}
+
+.loginContainer_wrapper_notHaveAccount_link {
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.loginContainer_wrapper_notHaveAccount_link:hover::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: blue;
+    position: absolute;
+    bottom: -5px;
+    right: 1px;
+}
