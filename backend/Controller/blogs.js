@@ -2,7 +2,6 @@ const Joi = require("joi");
 const fs = require("fs");
 const blogModel = require("../model/blog");
 const { SERVER_PATH } = require("../config/index");
-const { where } = require("../model/token");
 
 const Blogs = {
     async CreateBlog(req, res, next) {
@@ -71,7 +70,9 @@ const Blogs = {
         }
 
         try {
-            const blog = await blogModel.findOne({ _id: id });
+            const blog = await blogModel
+                .findOne({ _id: id })
+                .populate("userId");
 
             return res.status(200).json({ blog });
         } catch (error) {

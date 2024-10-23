@@ -70,7 +70,7 @@ const Single = () => {
                 </div>
                 <div className={style.rightSide_userInfo}>
                     <div className={style.rightSide_userInfo_img}>
-                        {username[0]}
+                        {blog.userId?.username[0]}
                     </div>
                     <div className={style.rightSide_userInfo_NP}>
                         <span>
@@ -83,7 +83,7 @@ const Single = () => {
                             >
                                 @
                             </span>{" "}
-                            {username}
+                            {blog.userId?.username}
                         </span>
                         <span>{createdAt}</span>
                     </div>

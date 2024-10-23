@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import internal from "../../api/internal";
 import style from "./Style.module.css";
-import { Link, useLocation, useParams } from "react-router-dom";
-import axios from "axios";
+import { Link, useLocation } from "react-router-dom";
 
 const Home = () => {
     const [data, setData] = useState([]);
