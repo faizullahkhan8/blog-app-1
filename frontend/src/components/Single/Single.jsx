@@ -33,7 +33,7 @@ const Single = () => {
         return () => {
             setBlog({});
         };
-    }, []);
+    }, [id]);
     useEffect(() => {
         (async () => {
             try {
@@ -47,7 +47,7 @@ const Single = () => {
         return () => {
             setBlogByCat([]);
         };
-    }, []);
+    }, [blog.cat]);
 
     const handleDelete = async () => {
         try {
