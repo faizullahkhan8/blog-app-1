@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import style from "./Style.module.css";
 import { MdDelete, MdEdit } from "react-icons/md";
-import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import internal from "../../api/internal";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
@@ -9,10 +9,7 @@ import { toast } from "react-toastify";
 const Single = () => {
     const { id } = useParams();
 
-    const location = useLocation;
     const navigate = useNavigate();
-
-    const username = useSelector((state) => state.user.username);
 
     const userId = useSelector((state) => state.user._id);
 

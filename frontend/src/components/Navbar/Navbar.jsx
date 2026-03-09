@@ -3,7 +3,7 @@ import Style from "./style.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import internal from "../../api/internal";
 import { resetUser } from "../../Store/user";
-import { MdClose, MdList } from "react-icons/md";
+import { MdList } from "react-icons/md";
 import { toast } from "react-toastify";
 
 const Navbar = () => {
